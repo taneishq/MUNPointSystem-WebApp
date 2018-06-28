@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang=“en-US”>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <style type="text/css">
+    body {
+      background-color:#333333;
+      font-family: "Nexa Bold";
+      font-size: x-large;
+      padding: 20px;
+    }
+    h1.border {
+      text-align: center;
+      color: #2183B9;
+      padding: 0.5px;
+      font-family: "Nexa Bold";
+      font-size: 200%;
+    }
+    p.submit {
+      cursor: pointer;
+      background-color: rgba(0,0,0,0.1);
+      border: none;
+      height:25px;
+      width: 120px;
+    }
+    input {
+      background-color: rgba(0,0,0,0.1);
+      color: white;
+      border: solid white 1px;
+    }
+    input.box {
+      height:22px;
+      width: 250px;
+      font-size:14pt;
+      border: solid white 1px;
+    }
+    input.submit {
+      height:25px;
+      width: 120px;
+    }
+    br.para {
+      display: block;
+      margin: 1px;
+      line-height:5px;
+    }
+
+  </style>
+  <h1 class="border"> MODEL UNITED NATIONS <br> POINTS SYSTEM </h1>
+  <script src="../MUN Points System/app.js"></script>
+</head>
+<body>
+<form action="/action_page.php" method="post" ; style="color: black">
+  <!--country (bold)-->
+  <p class="text">
+    <b style="color: white">COUNTRY</b>
+    <br>
+    <input class="box" type="text" name="Country">
+  </p>
+  <br class="para">
+  <!--Motion (bold)-->
+  <p class="text">
+    <b style="color: white">SPEECH TYPE</b>
+    <br>
+    <input class="box" type="text" name="Motion">
+  </p>
+  <br class="para">
+  <!--points-->
+  <p class="text">
+    <b style="color: white">POINTS</b>
+    <br>
+    <input class="box" type="number" name="Points">
+  </p>
+  <!--"submit points"-->
+  <p class="submit">
+    <input class="submit" type="submit" value="SUBMIT POINTS">
+  </p>
+</form>
+</body>
+<style>
+  h2.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #2183B9;
+    text-align: center;
+    padding: 10px;
+    font-size: small;
+  }
+</style>
+<h2 class="footer">
+  MADE BY TANEISHQ MUHUNTHAN <br> HEAD OF INFORMATION TECHNOLOGY
+</h2>
+</html>

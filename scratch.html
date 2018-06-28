@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang=“en-US” ng-app="pointsystem">
+<head>
+    <style type="text/css">
+        h1.border {
+            text-align: center;
+            color: #2183B9;
+            font-family: "Nexa Bold";
+            font-size: 200%;
+            top: 0px;
+        }
+        body.style {
+            background-color:#333333;
+            font-family: "Nexa Bold";
+            font-size: x-large;
+            padding: 50px;
+        }
+        p.submit {
+            cursor: pointer;
+        }
+        input {
+            background-color: rgba(0,0,0,0.1);
+            color: white;
+            border: none;
+        }
+        input.box {
+            height:22px;
+            width: 250px;
+            font-size:14pt;
+        }
+        input.submit {
+            height:25px;
+            width: 120px;
+        }
+        br.para {
+            display: block;
+            margin: 1px;
+            line-height:5px;
+        }
+    </style>
+    <h1 class="border"> MODEL UNITED NATIONS <br> POINTS SYSTEM </h1>
+    <script src="../MUN Points System/app.js"></script>
+</head>
+<body class="style" ng-controller="maincontroller">
+<form action="/action_page.php" method="post" style="color: black">
+    <!--country (bold)-->
+    <p class="text">
+        <b style="color: white">Country</b>
+        <br>
+        <input class="box" type="text" name="Country">
+    </p>
+    <br class="para">
+    <!--Motion (bold)-->
+    <p class="text">
+        <b style="color: white">Motion</b>
+        <br>
+        <input class="box" type="text" name="Motion">
+    </p>
+    <br class="para">
+    <!--points-->
+    <p class="text">
+        <b style="color: white">Points</b>
+        <br>
+        <input class="box" type="number" name="Points">
+    </p>
+    <br class="para">
+    <!--"submit points"-->
+    <p class="submit">
+        <input class="submit" type="submit" value="Submit Points">
+    </p>
+</form>
+</body>
+<style>
+    h2.footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: #2183B9;
+        text-align: center;
+        padding: 10px;
+        font-size: small;
+    }
+</style>
+<h2 class="footer">
+    MADE BY TANEISHQ MUHUNTHAN <br> HEAD OF INFORMATION TECHNOLOGY
+</h2>
+</html>
